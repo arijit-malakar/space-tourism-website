@@ -7,7 +7,24 @@ const Header = () => {
     <header className="header">
       <img src="../src/assets/shared/logo.svg" alt="logo-img" />
       <div className="header-divider"></div>
-      <div className="mobile-menu-btn"></div>
+      <button
+        className="btn-hamburger"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
+        {isMobileMenuOpen ? (
+          <img
+            className="icon-close"
+            src="../src/assets/shared/icon-close.svg"
+            alt="icon-close"
+          />
+        ) : (
+          <img
+            className="icon-hamburger"
+            src="../src/assets/shared/icon-hamburger.svg"
+            alt="icon-hamburger"
+          />
+        )}
+      </button>
       <nav className={`nav ${isMobileMenuOpen && "open"}`}>
         <ul className="nav-list">
           <li>

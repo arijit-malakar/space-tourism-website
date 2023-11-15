@@ -84,6 +84,18 @@ h5 {
   }
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 100px;
+  }
+
+  h5 {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+}
+
 .sub-heading-1 {
   font-size: 1.75rem;
   font-family: var(--font-heading);
@@ -96,6 +108,7 @@ h5 {
 }
 
 p {
+  color: var(--color-light-purple);
   font-size: 1.125rem;
   line-height: 32px;
   text-transform: none;
@@ -105,6 +118,13 @@ p {
   p {
     font-size: 1rem;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
@@ -118,6 +138,12 @@ p {
 
 .mb-24 {
   margin-bottom: 1.5rem !important;
+}
+
+@media (max-width: 480px) {
+  .mb-24 {
+    margin-bottom: 1rem !important;
+  }
 }
 
 /* Buttons */
@@ -135,6 +161,15 @@ p {
   font-size: 2rem;
   font-family: var(--font-heading);
   letter-spacing: 2px;
+}
+
+@media (max-width: 480px) {
+  .btn-main {
+    width: 9.375rem;
+    height: 9.375rem;
+    font-size: 1.25rem;
+    letter-spacing: 1.25px;
+  }
 }
 
 /* Header */
@@ -157,8 +192,7 @@ p {
 
 @media (max-width: 480px) {
   .header {
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    margin: 1.5rem 1.5rem 0;
   }
 }
 
@@ -195,10 +229,10 @@ p {
 
 @media (max-width: 480px) {
   .nav {
-    padding: 4rem 0 0 2rem;
+    padding: 7.375rem 0 0 2rem;
     position: absolute;
     top: -1.5rem;
-    right: 0;
+    right: -1.5rem;
     height: 100vh;
   }
 }
@@ -268,6 +302,30 @@ p {
   }
 }
 
+/* Hamburger Menu */
+
+.btn-hamburger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .btn-hamburger {
+    display: unset;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    z-index: 1;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: unset;
+  }
+}
+
 /* Landing Page - Content */
 .container {
   margin: 0 auto;
@@ -284,6 +342,13 @@ p {
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 3rem 1.5rem 0;
+    row-gap: 5rem;
+  }
+}
+
 .col {
   width: 50%;
 }
@@ -297,6 +362,12 @@ p {
 
 .content-home {
   width: min-content;
+}
+
+@media (max-width: 480px) {
+  .content-home {
+    width: unset;
+  }
 }
 
 .btn-wrapper {
