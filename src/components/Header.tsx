@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/Header.css";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

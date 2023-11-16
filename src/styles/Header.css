@@ -1,0 +1,153 @@
+/* Header */
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-left: 3.4rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 0;
+    padding-left: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 1.5rem 0;
+  }
+}
+
+.header-divider {
+  height: 1px;
+  width: 100%;
+  margin-left: 4rem;
+  margin-right: -2rem;
+  background-color: var(--color-white);
+  opacity: 0.25;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .header-divider {
+    display: none;
+  }
+}
+
+/* Navigation */
+
+.nav {
+  padding: 2.5rem 10rem 2.5rem 7.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.55px);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 7.375rem 0 0 2rem;
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    height: 100vh;
+  }
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.125rem;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+
+.nav .nav-text {
+  padding-bottom: calc(2.5rem - 5px);
+}
+
+.nav .nav-text:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav .nav-text:active {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.nav-text.active {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+  .nav .nav-text.active {
+    border-bottom: none;
+    border-right: 3px solid rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav .nav-text {
+    font-size: 0.875rem;
+  }
+
+  .nav .nav-text strong {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav .nav-text {
+    display: block;
+    font-size: 1rem;
+    padding: 0.375rem 6rem 0.375rem 0;
+  }
+
+  .nav .nav-text strong {
+    display: unset;
+  }
+}
+
+/* Hamburger Menu */
+
+.btn-hamburger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .btn-hamburger {
+    display: unset;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    z-index: 1;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: unset;
+  }
+}
