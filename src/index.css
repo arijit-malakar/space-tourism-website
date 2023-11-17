@@ -265,37 +265,21 @@ p {
 }
 
 /* Other Pages */
-.align-page {
-  padding: 4.75rem 0 0 10.375rem;
-}
-
-@media (max-width: 768px) {
-  .align-page {
-    padding: 2.5rem 0 0 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .align-page {
-    padding: 1.5rem 0 0 0;
-  }
-}
-
 .page-title {
-  margin-bottom: 6rem;
+  margin: 4.75rem 0 4rem 10.375rem;
   text-align: left;
   color: var(--color-white);
 }
 
 @media (max-width: 768px) {
   .page-title {
-    margin: 0 0 3.75rem 2.375rem;
+    margin: 2.5rem 0 3.75rem 2.375rem;
   }
 }
 
 @media (max-width: 480px) {
   .page-title {
-    margin: 0 0 2rem 0;
+    margin: 1.5rem 0 2rem;
     text-align: center;
   }
 }
@@ -313,13 +297,21 @@ p {
 
 /* Destination Page */
 .align-page-destination {
-  padding-right: 10.25rem;
+  padding: 0 10.25rem 7.375rem 10.375rem;
   justify-content: space-between;
 }
 
 @media (max-width: 768px) {
   .align-page-destination {
-    padding-right: unset;
+    padding: 0 6.125rem 3.875rem;
+    gap: 3.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .align-page-destination {
+    padding: 0 1.5rem 3.625rem;
+    gap: 1.625rem;
   }
 }
 
@@ -331,13 +323,13 @@ p {
 
 /* Destination Page - Tabs */
 .tab-image-wrapper {
-  padding-left: 4rem;
+  padding: 2.125rem 0 0 4rem;
   justify-content: center;
 }
 
 @media (max-width: 768px) {
   .tab-image-wrapper {
-    padding-left: unset;
+    padding: unset;
   }
 
   .tab-image {
