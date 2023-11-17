@@ -2,10 +2,10 @@ const Destination = () => {
   return (
     <div className="container align-page align-page-destination">
       <div className="col">
-        <h5>
-          <strong>01</strong> Pick your destination
+        <h5 className="page-title">
+          <strong>01</strong>Pick your destination
         </h5>
-        <div className="tab-img-wrapper">
+        <div className="tab-image-wrapper">
           <img
             className="tab-image"
             src="../src/assets/destination/image-moon.webp"
@@ -13,9 +13,9 @@ const Destination = () => {
           />
         </div>
       </div>
-      <div className="col w-40">
-        <div className="btn-group">
-          <button className="btn btn-tab nav-text">Moon</button>
+      <div className="col w-laptop-40">
+        <div className="tabs">
+          <button className="btn btn-tab nav-text active">Moon</button>
           <button className="btn btn-tab nav-text">Mars</button>
           <button className="btn btn-tab nav-text">Europa</button>
           <button className="btn btn-tab nav-text">Titan</button>
