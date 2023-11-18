@@ -1,12 +1,12 @@
 import Header from "./components/Header";
-import Destination from "./pages/Destination";
+import Crew from "./pages/Crew";
 
 const App = () => {
   return (
     <>
       <Header />
       <main>
-        <Destination />
+        <Crew />
       </main>
     </>
   );

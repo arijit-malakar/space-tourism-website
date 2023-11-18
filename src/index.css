@@ -204,6 +204,19 @@ p {
   }
 }
 
+.btn-dot {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border: unset;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  opacity: 0.17;
+}
+
+.btn-dot.active {
+  opacity: unset;
+}
+
 /* Landing Page - Content */
 .container {
   margin: 0 auto;
@@ -421,4 +434,36 @@ p {
   .stat-group {
     align-items: center;
   }
+}
+
+/* Crew Page */
+.align-page-crew {
+  padding: 0 8.5rem 0 10.375rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Crew Page - Carousel */
+.carousel-subtitle {
+  opacity: 0.5;
+  margin-bottom: 0.875rem;
+}
+
+.carousel-title {
+  text-wrap: nowrap;
+  margin-bottom: 1.625rem;
+}
+
+.carousel-description {
+  padding-right: 2.75rem;
+  margin-bottom: 7.5rem;
+}
+
+.dots {
+  display: inline-flex;
+  gap: 1.5rem;
+}
+
+.carousel-image-wrapper {
+  margin-top: -5.75rem;
 }
