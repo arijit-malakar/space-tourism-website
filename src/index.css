@@ -87,6 +87,14 @@ h5 {
     font-size: 5rem;
   }
 
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
   h5 {
     font-size: 1.25rem;
     letter-spacing: 3.38px;
@@ -101,6 +109,14 @@ h5 {
 
   h2 {
     font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 
   h5 {
@@ -213,6 +229,13 @@ p {
   opacity: 0.17;
 }
 
+@media (max-width: 768px) {
+  .btn-dot {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+}
+
 .btn-dot.active {
   opacity: unset;
 }
@@ -256,6 +279,12 @@ p {
 
 .content-home {
   width: min-content;
+}
+
+@media (max-width: 768px) {
+  .carousel-content.content-home {
+    width: unset;
+  }
 }
 
 @media (max-width: 480px) {
@@ -441,6 +470,28 @@ p {
   padding: 0 8.5rem 0 10.375rem;
   justify-content: space-between;
   align-items: center;
+  row-gap: 12.25rem;
+}
+
+@media (max-width: 768px) {
+  .align-page-crew {
+    padding: 0 9.75rem;
+    row-gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .align-page-crew {
+    padding: 0 1.5rem;
+    flex-direction: column-reverse;
+  }
+
+  .align-page-crew .col:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 /* Crew Page - Carousel */
@@ -449,9 +500,21 @@ p {
   margin-bottom: 0.875rem;
 }
 
+@media (max-width: 768px) {
+  .carousel-subtitle {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .carousel-title {
   text-wrap: nowrap;
   margin-bottom: 1.625rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-subtitle {
+    margin-bottom: 1rem;
+  }
 }
 
 .carousel-description {
@@ -459,11 +522,53 @@ p {
   margin-bottom: 7.5rem;
 }
 
+@media (max-width: 768px) {
+  .carousel-description {
+    padding-right: unset;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-description {
+    margin-bottom: 6.5rem;
+  }
+}
+
 .dots {
   display: inline-flex;
   gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .dots {
+    gap: 1rem;
+  }
+}
+
 .carousel-image-wrapper {
   margin-top: -5.75rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-image-wrapper {
+    margin-top: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image-wrapper {
+    padding: 0 4.75rem;
+    border-bottom: 1px solid #383b4b;
+  }
+}
+
+.carousel-image {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .carousel-image {
+    margin-bottom: -1.5px;
+  }
 }
