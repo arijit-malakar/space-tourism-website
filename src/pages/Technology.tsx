@@ -1,0 +1,47 @@
+const Technology = () => {
+  return (
+    <>
+      <h5 className="page-title technology">
+        <strong>03</strong>Space launch 101
+      </h5>
+      <div className="container align-page-technology">
+        <div className="col">
+          <div className="carousel2-content-wrapper">
+            <div className="btn-wrapper-carousel2">
+              <button className="btn btn-carousel2">1</button>
+              <button className="btn btn-carousel2 active">2</button>
+              <button className="btn btn-carousel2">3</button>
+            </div>
+            <div className="carousel2-content">
+              <p className="carousel2-subtitle nav-text">The terminology...</p>
+              <h3 className="carousel2-title">Spaceport</h3>
+              <p className="carousel2-description">
+                A spaceport or cosmodrome is a site for launching (or receiving)
+                spacecraft, by analogy to the seaport for ships or airport for
+                aircraft. Based in the famous Cape Canaveral, our spaceport is
+                ideally situated to take advantage of the Earth’s rotation for
+                launch.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="carousel2-image-wrapper">
+            <img
+              className="carousel2-image-portrait"
+              src="../src/assets/technology/image-spaceport-portrait.jpg"
+              alt="image-moon"
+            />
+            <img
+              className="carousel2-image-landscape"
+              src="../src/assets/technology/image-spaceport-landscape.jpg"
+              alt="image-moon"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Technology;
