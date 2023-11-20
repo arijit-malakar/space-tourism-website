@@ -87,18 +87,6 @@
   padding-bottom: calc(2.5rem - 5px);
 }
 
-.nav .nav-text:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-}
-
-.nav .nav-text:active {
-  border-bottom: 3px solid rgb(255, 255, 255);
-}
-
-.nav-text.active {
-  border-bottom: 3px solid rgb(255, 255, 255);
-}
-
 @media (max-width: 480px) {
   .nav .nav-text.active {
     border-bottom: none;

@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const Crew = () => {
   return (
     <>
@@ -16,10 +18,9 @@ const Crew = () => {
             </p>
           </div>
           <div className="dots">
-            <button className="btn btn-dot active"></button>
-            <button className="btn btn-dot"></button>
-            <button className="btn btn-dot"></button>
-            <button className="btn btn-dot"></button>
+            {Array.from({ length: 4 }, (_, i) => (
+              <Button key={i} type="dot" active={i === 0}></Button>
+            ))}
           </div>
         </div>
         <div className="col">

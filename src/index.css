@@ -11,6 +11,7 @@
   --color-light-purple: #d0d6f9;
   --color-black-quarter: rgba(0, 0, 0, 0.25);
   --color-white-quarter: rgba(255, 255, 255, 0.25);
+  --color-white-one-tenth: rgba(255, 255, 255, 0.1);
 
   --font-body-text: "Barlow", sans-serif;
   --font-heading: "Bellefair", serif;
@@ -172,6 +173,15 @@ p {
   letter-spacing: 2.7px;
 }
 
+.nav-text:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-text:active,
+.nav-text.active {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
 /* Utility Classes */
 
 .mb-24 {
@@ -181,108 +191,6 @@ p {
 @media (max-width: 480px) {
   .mb-24 {
     margin-bottom: 1rem !important;
-  }
-}
-
-/* Buttons */
-
-.btn {
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.btn-main {
-  width: 15rem;
-  height: 15rem;
-  border: unset;
-  border-radius: 50%;
-  color: var(--color-black);
-  font-size: 2rem;
-  font-family: var(--font-heading);
-  letter-spacing: 2px;
-}
-
-@media (max-width: 480px) {
-  .btn-main {
-    width: 9.375rem;
-    height: 9.375rem;
-    font-size: 1.25rem;
-    letter-spacing: 1.25px;
-  }
-}
-
-.btn-tab {
-  background-color: unset;
-  border: unset;
-  padding-bottom: 0.75rem;
-}
-
-@media (max-width: 480px) {
-  .btn-tab {
-    padding-bottom: 0.5rem;
-  }
-}
-
-.btn-dot {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  border: unset;
-  border-radius: 50%;
-  background-color: var(--color-white);
-  opacity: 0.17;
-}
-
-@media (max-width: 768px) {
-  .btn-dot {
-    width: 0.625rem;
-    height: 0.625rem;
-  }
-}
-
-.btn-dot.active {
-  opacity: unset;
-}
-
-.btn-carousel2 {
-  width: 5rem;
-  height: 5rem;
-  border: 1px solid var(--color-white-quarter);
-  border-radius: 50%;
-  font-size: 2rem;
-  font-family: var(--font-heading);
-  color: var(--color-white);
-  background-color: var(--color-black-quarter);
-}
-
-.btn-carousel2:hover {
-  border-color: var(--color-white);
-}
-
-.btn-carousel2:active {
-  border-color: var(--color-white);
-  background-color: var(--color-white);
-  color: var(--color-black);
-}
-
-.btn-carousel2.active {
-  border-color: var(--color-white);
-  background-color: var(--color-white);
-  color: var(--color-black);
-}
-
-@media (max-width: 768px) {
-  .btn-carousel2 {
-    width: 3.75rem;
-    height: 3.75rem;
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .btn-carousel2 {
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1rem;
   }
 }
 

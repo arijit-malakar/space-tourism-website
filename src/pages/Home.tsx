@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const Home = () => {
   return (
     <div className="container align-home">
@@ -15,7 +17,7 @@ const Home = () => {
       </div>
       <div className="col">
         <div className="btn-wrapper">
-          <button className="btn btn-main">Explore</button>
+          <Button type="main">Explore</Button>
         </div>
       </div>
     </div>

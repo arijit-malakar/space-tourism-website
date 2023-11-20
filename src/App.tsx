@@ -1,12 +1,12 @@
 import Header from "./components/Header";
-import Technology from "./pages/Technology";
+import Destination from "./pages/Destination";
 
 const App = () => {
   return (
     <>
       <Header />
       <main>
-        <Technology />
+        <Destination />
       </main>
     </>
   );

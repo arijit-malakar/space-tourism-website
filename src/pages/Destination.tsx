@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const Destination = () => {
   return (
     <>
@@ -16,10 +18,11 @@ const Destination = () => {
         </div>
         <div className="col w-laptop-40">
           <div className="tabs">
-            <button className="btn btn-tab nav-text active">Moon</button>
-            <button className="btn btn-tab nav-text">Mars</button>
-            <button className="btn btn-tab nav-text">Europa</button>
-            <button className="btn btn-tab nav-text">Titan</button>
+            {["Moon", "Mars", "Europe", "Titan"].map((value, i) => (
+              <Button key={i + 1} type="tab" active={i === 0}>
+                {value}
+              </Button>
+            ))}
           </div>
           <div className="tab-content">
             <h2 className="tab-title mb-14">Moon</h2>

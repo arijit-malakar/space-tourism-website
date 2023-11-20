@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const Technology = () => {
   return (
     <>
@@ -8,9 +10,11 @@ const Technology = () => {
         <div className="col">
           <div className="carousel2-content-wrapper">
             <div className="btn-wrapper-carousel2">
-              <button className="btn btn-carousel2">1</button>
-              <button className="btn btn-carousel2 active">2</button>
-              <button className="btn btn-carousel2">3</button>
+              {Array.from({ length: 3 }, (_, i) => (
+                <Button key={i + 1} type="carousel2" active={i === 0}>
+                  {i + 1}
+                </Button>
+              ))}
             </div>
             <div className="carousel2-content">
               <p className="carousel2-subtitle nav-text">The terminology...</p>
