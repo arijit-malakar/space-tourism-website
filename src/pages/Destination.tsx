@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import { destinations as data } from "../data.json";
 
 const Destination = () => {
   return (
@@ -16,17 +17,17 @@ const Destination = () => {
             />
           </div>
         </div>
-        <div className="col w-laptop-40">
+        <div className="col">
           <div className="tabs">
-            {["Moon", "Mars", "Europe", "Titan"].map((value, i) => (
+            {data.map((value, i) => (
               <Button key={i + 1} type="tab" active={i === 0}>
-                {value}
+                {value.name}
               </Button>
             ))}
           </div>
           <div className="tab-content">
-            <h2 className="tab-title mb-14">Moon</h2>
-            <p className="tab-description pb-54 mb-28">
+            <h2 className="tab-title">Moon</h2>
+            <p className="description tab-description">
               See our planet as you’ve never seen it before. A perfect relaxing
               trip away to help regain perspective and come back refreshed.
               While you’re there, take in some history by visiting the Luna 2

@@ -8,10 +8,10 @@ const Crew = () => {
       </h5>
       <div className="container align-page-crew">
         <div className="col">
-          <div className="carousel-content content-home">
+          <div className="carousel-content">
             <h4 className="carousel-subtitle">Commander</h4>
             <h3 className="carousel-title">Douglas Hurley</h3>
-            <p className="carousel-description">
+            <p className="description carousel-description">
               Douglas Gerald Hurley is an American engineer, former Marine Corps
               pilot and former NASA astronaut. He launched into space for the
               third time as commander of Crew Dragon Demo-2.

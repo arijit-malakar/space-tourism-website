@@ -19,7 +19,7 @@ const Technology = () => {
             <div className="carousel2-content">
               <p className="carousel2-subtitle nav-text">The terminology...</p>
               <h3 className="carousel2-title">Spaceport</h3>
-              <p className="carousel2-description">
+              <p className="description">
                 A spaceport or cosmodrome is a site for launching (or receiving)
                 spacecraft, by analogy to the seaport for ships or airport for
                 aircraft. Based in the famous Cape Canaveral, our spaceport is
