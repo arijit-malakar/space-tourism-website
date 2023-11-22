@@ -4,9 +4,10 @@ interface ButtonProps {
   type: "main" | "tab" | "dot" | "carousel2";
   active?: boolean;
   children?: React.ReactNode;
+  onClick: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ type, active, children }) => {
+const Button: React.FC<ButtonProps> = ({ type, active, children, onClick }) => {
   let classNames = "btn ";
   switch (type) {
     case "main":
@@ -24,7 +25,10 @@ const Button: React.FC<ButtonProps> = ({ type, active, children }) => {
   }
 
   return (
-    <button className={`${classNames}${active ? " active" : ""}`}>
+    <button
+      className={`${classNames}${active ? " active" : ""}`}
+      onClick={onClick}
+    >
       {children && children}
     </button>
   );

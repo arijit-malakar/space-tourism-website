@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,24 +27,24 @@ const Navbar = () => {
       <nav className={`nav${isMobileMenuOpen ? " open" : ""}`}>
         <ul className="nav-list">
           <li>
-            <a className="nav-text active" href="#">
+            <NavLink className="nav-text" to="/">
               <strong>00</strong> Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="nav-text" href="#">
+            <NavLink className="nav-text" to="/destination">
               <strong>01</strong> Destination
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="nav-text" href="#">
+            <NavLink className="nav-text" to="/crew">
               <strong>03</strong> Crew
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="nav-text" href="#">
+            <NavLink className="nav-text" to="/technology">
               <strong>04</strong> Technology
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

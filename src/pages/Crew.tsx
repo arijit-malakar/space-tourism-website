@@ -1,13 +1,14 @@
-import Button from "../components/Button";
+import { CrewType } from "../@types/pageDataTypes";
+import Carousel from "../components/Carousel";
 
-const Crew = () => {
+const Crew = ({ data }: { data: CrewType[] }) => {
   return (
     <>
       <h5 className="page-title">
         <strong>02</strong>Meet your crew
       </h5>
       <div className="container align-page-crew">
-        <div className="col">
+        {/* <div className="col">
           <div className="carousel-content">
             <h4 className="carousel-subtitle">Commander</h4>
             <h3 className="carousel-title">Douglas Hurley</h3>
@@ -31,7 +32,8 @@ const Crew = () => {
               alt="image-moon"
             />
           </div>
-        </div>
+        </div> */}
+        <Carousel variant={1} data={data} />
       </div>
     </>
   );
