@@ -14,7 +14,7 @@ const Home = () => {
         </p>
       </div>
       <div className="col">
-        <div className="btn-wrapper">
+        <div className="btn-wrapper-main">
           <Button type="main">Explore</Button>
         </div>
       </div>

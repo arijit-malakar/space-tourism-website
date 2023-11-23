@@ -125,7 +125,6 @@
 @media (max-width: 480px) {
   .btn-hamburger {
     display: unset;
-    border: none;
     background-color: transparent;
     line-height: 0;
     z-index: 2;

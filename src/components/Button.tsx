@@ -1,7 +1,7 @@
 import "../styles/button.css";
 
 interface ButtonProps {
-  type: "main" | "tab" | "dot" | "carousel2";
+  type: "main" | "tab" | "dot" | "carousel2" | "hamburger";
   active?: boolean;
   children?: React.ReactNode;
   onClick?: () => void;
@@ -21,6 +21,9 @@ const Button: React.FC<ButtonProps> = ({ type, active, children, onClick }) => {
       break;
     case "carousel2":
       classNames += "btn-round btn-carousel2";
+      break;
+    case "hamburger":
+      classNames += "btn-hamburger";
       break;
   }
 

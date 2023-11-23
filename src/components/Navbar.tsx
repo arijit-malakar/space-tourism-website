@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
-      <button
-        className="btn-hamburger"
+      <Button
+        type="hamburger"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         {isMobileMenuOpen ? (
@@ -23,7 +24,7 @@ const Navbar = () => {
             alt="icon-hamburger"
           />
         )}
-      </button>
+      </Button>
       <nav className={`nav${isMobileMenuOpen ? " open" : ""}`}>
         <ul className="nav-list">
           <li>

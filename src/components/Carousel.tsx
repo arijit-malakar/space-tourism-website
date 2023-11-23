@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/carousel.css";
 import { CrewType, TechnologyType } from "../@types/pageDataTypes";
 import Button from "../components/Button";
 
@@ -74,7 +75,7 @@ const Carousel: React.FC<CarouselProps> = ({ variant, data }) => {
                 ))}
               </div>
               <div className="carousel2-content">
-                <p className="carousel2-subtitle nav-text">
+                <p className="nav-text carousel2-subtitle">
                   The terminology...
                 </p>
                 <h3 className="carousel2-title">
