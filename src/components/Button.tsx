@@ -4,7 +4,7 @@ interface ButtonProps {
   type: "main" | "tab" | "dot" | "carousel2";
   active?: boolean;
   children?: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({ type, active, children, onClick }) => {
