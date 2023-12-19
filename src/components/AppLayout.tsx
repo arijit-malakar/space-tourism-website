@@ -12,7 +12,7 @@ const AppLayout = () => {
 
   return (
     <>
-      <Header logoPath="../src/assets/shared/logo.svg">
+      <Header logoPath="assets/shared/logo.svg">
         <Navbar />
       </Header>
       <main>

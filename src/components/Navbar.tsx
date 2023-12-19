@@ -14,13 +14,13 @@ const Navbar = () => {
         {isMobileMenuOpen ? (
           <img
             className="icon-close"
-            src="../src/assets/shared/icon-close.svg"
+            src="assets/shared/icon-close.svg"
             alt="icon-close"
           />
         ) : (
           <img
             className="icon-hamburger"
-            src="../src/assets/shared/icon-hamburger.svg"
+            src="assets/shared/icon-hamburger.svg"
             alt="icon-hamburger"
           />
         )}
