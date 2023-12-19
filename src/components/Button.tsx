@@ -1,5 +1,3 @@
-import "../styles/button.css";
-
 interface ButtonProps {
   type: "main" | "tab" | "dot" | "carousel2" | "hamburger";
   active?: boolean;

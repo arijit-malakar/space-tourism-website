@@ -1,5 +1,3 @@
-import "../styles/header.css";
-
 interface HeaderProps {
   logoPath: string;
   children: React.ReactNode;

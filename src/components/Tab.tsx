@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../styles/tab.css";
 import Button from "../components/Button";
 import { DestinationType } from "../@types/pageDataTypes";
 

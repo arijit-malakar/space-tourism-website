@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../styles/carousel.css";
 import { CrewType, TechnologyType } from "../@types/pageDataTypes";
 import Button from "../components/Button";
 
